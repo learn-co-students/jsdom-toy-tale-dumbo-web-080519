@@ -10,13 +10,13 @@ data using a JSON server. In order to do this, run the following two commands:
 
    * `npm install -g json-server`
    * `json-server --watch db.json`
-   
+
 This will create a server storing all of our lost toy data with restful routes
 at `http://localhost:3000/toys`. You can also check out
 `http://localhost:3000/toys/:id`
 
-## Fetch Andy's Toys
-
+<!-- ## Fetch Andy's Toys -->
+<!--
 On the `index.html` page, there is a `div` with the `id` "toy-collection."
 
 When the page loads, make a 'GET' request to fetch all the toy objects. With the
@@ -30,9 +30,9 @@ Each card should have the following child elements:
   * `h2` tag with the toy's name
   * `img` tag with the `src` of the toy's image attribute and the class name "toy-avatar"
   * `p` tag with how many likes that toy has
-  * `button` tag with a class "like-btn"
+  * `button` tag with a class "like-btn" -->
 
-After all of that, the toy card should resemble:
+<!-- After all of that, the toy card should resemble:
 
 ```html
   <div class="card">
@@ -41,9 +41,9 @@ After all of that, the toy card should resemble:
     <p>4 Likes </p>
     <button class="like-btn">Like <3</button>
   </div>
-```
+``` -->
 
-## Add a New Toy
+<!-- ## Add a New Toy
 
 * When a user clicks on the add new toy button, a `POST` request is sent to `http://localhost:3000/toys` and the new toy is added to Andy's Toy Collection.
 * The toy should conditionally render to the page.
@@ -51,7 +51,7 @@ After all of that, the toy card should resemble:
 
 ```
 POST http://localhost:3000/toys
-headers: 
+headers:
 {
   "Content-Type": "application/json",
   Accept: "application/json"
@@ -65,7 +65,7 @@ body:
 }
 ```
 
-* For examples, refer to the [documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Supplying_request_options).
+* For examples, refer to the [documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#Supplying_request_options). -->
 
 ## Increase Toy's Likes
 
@@ -74,10 +74,10 @@ When a user clicks on a toy's like button, two things should happen:
   * Conditional increase to the toy's like count
   * A patch request sent to the server at `http://localhost:3000/toys/:id` updating the number of likes that the specific toy has
   * Headers and body are provided below (If your request isn't working, make sure your header and keys match the documentation.)
-  
+<!-- 
 ```
 PATCH http://localhost:3000/toys/:id
-headers: 
+headers:
 {
   "Content-Type": "application/json",
   Accept: "application/json"
@@ -87,4 +87,4 @@ body:
 {
   "likes": <new number>
 }
-```
+``` -->
