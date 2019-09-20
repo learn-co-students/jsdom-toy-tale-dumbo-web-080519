@@ -67,14 +67,13 @@ toyForm.addEventListener("submit", function(evt){
 })
 
 toyDiv.addEventListener("click", function(e){
-  if (e.target.className === "like-btn") {
+  if (e.target.className === "like-btn" && toyId !== "0") {
   	toyId = e.target.id
-    if (toyId !== "0")
-    	likesText = e.target.parentNode.querySelector("P").textContent
-  		textArray = likesText.split(" ")
-  		toyLikes = parseInt(textArray[0]) + 1 
-    	addLike(toyLikes)
-    	slapItOnTheDOM(toyLikes)
+	likesText = e.target.parentNode.querySelector("P").textContent
+	textArray = likesText.split(" ")
+	toyLikes = parseInt(textArray[0]) + 1 
+	addLike(toyLikes)
+	slapItOnTheDOM(toyLikes)
   }
 
   	function slapItOnTheDOM(likes){
