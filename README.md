@@ -1,3 +1,6 @@
+
+partner: @Josh Nho & @Zermina Ejaz
+
 # Toy Tale
 
 You've got a friend in need! Your friend Andy recently misplaced all their toys!
